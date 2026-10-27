@@ -1,53 +1,89 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Photo Shoot Effect</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="photo-shoot-effect.css"/>
-    <script src="js/script.js"> 
-        
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JavaScript Website</title>
     
+    <!-- Meta Description for SEO -->
+     <!-- The meta description provides a brief summary of the page content for search engines. -->
+    <meta name="description" content="A modern, responsive HTML starter template.">
+    <!-- Meta Keywords for SEO  - The meta keywords help search engines understand the main topics of the page.-->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Responsive Design, Starter Template">
+    <!-- Meta Author for SEO -->
+    <meta name="author" content="Your Name">
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="css/styles.css">    
 </head>
-<body ">
-<header>
-    <h1>Your Logo</h1>
-    <h3>and a fancy slogan</h3>
-    <nav>
-        <ul>
-            <li onclick="vale()"><a  href="#">PHOTOSHOOT</a></li>
-            <li onclick="changeContent()"><a href="#" title="sweet tabs" ID="cc">Sweet Tabs</a></li>
-            <li><a href="#">Navigation Menu</a></li>
-        </ul>
-    </nav>
-</header>
+<body>
 
-<main>
-    <article>
-        <h2>Photoshoot Effect</h2>
-        <div class="article-content">
-            <figure>
-                <img src="images/photo.jpg"/>
-            </figure>
-            <p>
-                In this tutorial, we are creating a photo shoot effect with our just-released PhotoShoot jQuery
-                plug-in. With it you can convert a regular div on the page into a photo shooting stage simulating a
-                camera-like feel.
-            </p>
-            <p>
-                Potential clients want to see who they’ll be working with. They want to hire people, not stock
-                photography. We produced a custom photo shoot to bring the people of Paterson Buchanan front and
-                center and to underscore the firm’s open and welcoming style. Vivid images illustrate Paterson
-                Buchanan’s wide range of clients, as well as their commitment to the picturesque region the firm
-                serves.
-            </p>
+    <!-- Header / Nav -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2>Your name or brand </h2>
+            </div>
+
+            <!-- CSS-only toggle: the hidden checkbox holds the open/closed state,
+                 the label is the visible hamburger, and :checked ~ nav opens the drawer 
+                 THIS IS A CSS-ONLY SOLUTION ,ONLY USED FOR CLASS -->
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox" aria-label="Toggle Navigation" aria-controls="navbar">
+            <label for="menu-checkbox" class="menu-toggle" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu  -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </article>
-</main>
+    </header>
 
-<footer>
-    &copy; Copyright 2026 - YourSite.com
-</footer>
+    <!-- Main Dynamic Content Wrapper -->
+    <div class="container content-wrapper">
+
+        <main>
+            <article>
+                <img src="https://picsum.photos/1200/600?random=1" alt="Placeholder Image" width="1200" height="600" loading="lazy">
+                <h2>Featured Article Title</h2>
+                <div class="article-meta">Published on October 22, 2026</div>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+
+            <article>
+                <img src="https://picsum.photos/1200/600?random=2" alt="Content Graphic" width="1200" height="600" loading="lazy">
+                <h2>Secondary Article Title</h2>
+                <div class="article-meta">Published on October 21, 2026</div>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+        </main>
+
+        <aside>
+            <img src="https://picsum.photos/800/600?random=3" alt="Sidebar Graphic" width="800" height="600" loading="lazy">
+            <h3>Sidebar Widget</h3>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Name or brand. All rights reserved.</p>
+        </div>
+    </footer>
+
+<!--    Add javascript code here-->
+    <script> 
+    
+
+    </script>
 </body>
 </html>
